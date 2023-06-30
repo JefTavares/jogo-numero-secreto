@@ -16,7 +16,6 @@ recognition.addEventListener("result", onSpeak);
 function onSpeak(e) {
   //console.log(e.results[0][0].transcript);
   chute = e.results[0][0].transcript;
-
   exibeChuteNaTela(chute);
 
   verificaSeOChutePossuiUmaValorValido(chute);
